@@ -14,6 +14,7 @@ from utilities.const import (
     NEWS_API_KEY,
     EXISTING_TOPICS,
 )
+from utilities.create_directories import create_directories
 from video.create_vd import VideoProcessor
 from video.subtitle import VideoTextOverlay, AddAudio
 
@@ -34,6 +35,8 @@ class MultiLogger:
             console_handler = logging.StreamHandler()
             console_handler.setFormatter(formatter)
             self.logger.addHandler(console_handler)
+        # create project directories mention
+        create_directories()
 
     def get_logger(self):
         return self.logger
@@ -103,8 +106,8 @@ def generate_video(generated_files_response):
                     updated_keywords = ''
                 if title is not None:
                     updated_keywords += "\n" + title
-#                if link is not None:
-#                    updated_keywords += "\n article link " + link
+                #                if link is not None:
+                #                    updated_keywords += "\n article link " + link
 
                 final_video_json["yt_description"] = updated_keywords
                 final_json.append(final_video_json)

@@ -19,6 +19,8 @@ CHANNEL_ID = 'YT_CHANNEL_ID'
 YOUR_OPENAI_API_KEY: str = "YOUR_OPENAI_API_KEY"
 GPT_MODEL: str = 'text-davinci-003'
 
+CREATE_DIRECTORY_IF_NOT_EXIST = True
+
 
 def get_current_date():
     return str(datetime.now().strftime('%d-%m-%Y-%M-%S'))

@@ -1,13 +1,57 @@
+
 # Auto-YouTube
-Python script for automated YouTube content generation, video generation, audio generation, subtitling, content tracking and uploading.
 
-- Content generation getting content from different sources (ChatGPT or Other API)
-- Audio generation Text to Speech TTS with amazon polly
-- Video generation using moviepy Python
-- Uploading to finished video to YouTube
+Python script for automated YouTube content generation, video creation, audio generation, subtitling, content tracking, and uploading.
 
-### To Start With
-> - configure the const.py files in audiobook_server and utilities
-> - run yt_auto_main.py 
+## Features
 
-#### here in this example, I'm using news data get contents.
+- **Content Generation:** Fetch content from various sources, such as ChatGPT or other APIs.
+
+- **Audio Generation:** Utilize Amazon Polly for Text-to-Speech (TTS) to generate audio content.
+
+- **Video Generation:** Use MoviePy in Python to create videos.
+
+- **Uploading:** Automatically upload finished videos to YouTube.
+
+## Getting Started
+
+To get started with Auto-YouTube, follow these steps:
+
+1. Configure the `const.py` files in the `utilities` directories.
+
+2. Run the `yt_auto_main.py` script.
+
+### Configuration
+
+Before running the script, make sure to configure the `const.py` files in the `audiobook_server` and `utilities` directories. Provide necessary API keys, credentials, and other required information.
+
+### Usage
+
+After configuration, run the `yt_auto_main.py` script to initiate the automated YouTube content generation process. Here's an example:
+
+```bash
+python yt_auto_main.py
+```
+
+After the project execution output can be seen in the OUTPUT_FINAL_VIDEO path. Related video info can be found in  OUTPUT_FINAL_INFO.
+
+
+
+### Dependencies
+
+Make sure to install the required dependencies before running the script:
+
+```bash
+pip install -r requirements.txt
+```
+
+### License
+
+
+This project is licensed under the [MIT License](LICENSE).
+
+### Acknowledgements
+
+- Thank you to the creators of ChatGPT and other APIs for providing content sources.
+- Special thanks to Amazon Polly for TTS services.
+- MoviePy for video generation.
