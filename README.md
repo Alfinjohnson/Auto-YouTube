@@ -1,7 +1,7 @@
 
 # Auto-YouTube
 
-Python script for automated YouTube content generation, video creation, audio generation, subtitling, content tracking, and uploading.
+Python code for creating automated YouTube shorts and videos with real-time news, including audio, video, and subtitles – all without any manual work.
 
 ## Features
 
