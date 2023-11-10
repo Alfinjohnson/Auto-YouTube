@@ -23,11 +23,21 @@ To get started with Auto-YouTube, follow these steps:
 
 ### Configuration
 
-Before running the script, make sure to configure the `const.py` files in the `audiobook_server` and `utilities` directories. Provide necessary API keys, credentials, and other required information.
+- Before running the script, make sure to configure the `const.py` files in the `audiobook_server` and `utilities` directories. Provide necessary API keys, credentials, and other required information.
+- Copy stock videos collections to STOCK_VIDEO_FOLDER path, this videos will be used has the video background.
+
+### Dependencies
+
+Make sure to install the required dependencies before running the script:
+
+```bash
+pip install -r requirements.txt
+```
+
 
 ### Usage
 
-After configuration, run the `yt_auto_main.py` script to initiate the automated YouTube content generation process. Here's an example:
+After dependencies, run the `yt_auto_main.py` script to initiate the automated YouTube content generation process. Here's an example:
 
 ```bash
 python yt_auto_main.py
@@ -37,13 +47,6 @@ After the project execution output can be seen in the OUTPUT_FINAL_VIDEO path. R
 
 
 
-### Dependencies
-
-Make sure to install the required dependencies before running the script:
-
-```bash
-pip install -r requirements.txt
-```
 
 ### License
 
